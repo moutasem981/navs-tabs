@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul{
+    list-style-type: none;
+}
+h2{
+    font-family: var(--primaryfont-family);
+}
+:root{
+    --primary-color:  #232536;
+    --primary-color2: #FFD050;
+    --primary-color3: #592EA9;
+    --primary-color4: #4C4C4C;
+    --primary-color5: #6D6E76;
+    --primary-color6: #F4F4F4;
+    --primary-color7: #F4F0F8;
+    --primary-color8: #FBF6EA;
+
+    --primaryfont-family: "Sen", sans-serif;
+    --primaryfont-family2:"Inter", sans-serif ;
+}
+.__btn{
+    padding: 16px 48px;
+    background-color: var(--primary-color2);
+    border: 0;
+    color: var(--primary-color);
+    font-family: var(--primaryfont-family);
+    font-size: 18px;
+}
+
+.__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* start header section */
+.header{
+    padding: 12px 0;
+    background-color: var(--primary-color);
+    position:sticky;
+    top: 0;
+}
+.header .__row{
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    row-gap: 15px;
+}
+ .logo img{
+    width: 140px;
+    height: 28.35px;
+    
+}
+
+.nav_ .nav-link{
+    color: #fff;
+    
+}
+.nav_ .active{
+    color:var(--primary-color);
+}
+.nav_ .nav-link :hover, .nav_ .nav-link:focus{
+    color: var(--primary-color);
+    background-color: #fff;
+}
+.button-header button{
+    background-color:#fff;
+}
+ .header i{
+    display: none;
+}
+
+@media screen and (min-width:0) and (max-width:770px){
+    .header .container .__btn{
+        display: none;
+        
+    }
+     .header i{
+    display: block;
+     }
+    .header .list-footer{
+        display: none;
+
+    }
+
+}
+
+/* end header section */
+
+/* start hero section */
+.hero{
+    background-image: url(../img/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png);
+    padding: 128px 0 192px;
+    background-size: cover;
+    color: #fff;
+}
+.hero span{
+    font-family: var(--primaryfont-family2);
+    line-height: 20px;
+}
+.hero h1{
+    font-family: var(--primaryfont-family);
+    margin: 28px 0;
+    width: 70%;
+    line-height: 64px;
+    font-size: 56px;
+}
+.data-hero .__row{
+    flex-direction: column;
+    font-family: var(--primaryfont-family2);
+    gap: 16px;
+}
+.James-West{
+    color: var(--primary-color2);
+}
+.__row .irure-dolor{
+    width: 50%;
+    line-height: 28px;
+    margin-bottom: 48px;
+}
+@media screen and (min-width:0) and (max-width:770px){
+    .hero{
+        background-image: url(../img/man-in-black-suit-770.png);
+        padding: 60px 0 60px;
+        height: 100h;
+    }
+   .hero h1{
+    margin: 15px 0;
+    width: 70%;
+    line-height: 40px;
+    font-size: 30px;
+
+    }
+}
+/* end hero section */
+.nav_ {
+    background-color: var(--primary-color);
+}
+.nav_ .items .tab-pane{
+    padding: 15px 0;
+    color: #fff;
+    
+}
+
+/* start footer section */
+.footer{
+    background-color: var(--primary-color);
+    padding: 61px 0 56px;
+}
+.footer-top .__row{
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 54.65px;
+}
+.list-footer ul{
+    display: flex;
+    gap: 24px;
+}
+.footer-body .__row{
+    background-color: #ffffff05;
+    padding: 80px 64px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-body .Subscribe h2{
+    color: #fff;
+    font-size: 36px;
+    max-width: 562px;
+}
+.footer-body form{
+    display: flex;
+    gap: 24px;
+}
+.footer-body input{
+    border: var(--primary-color5) solid 1px;
+    background-color:#ffffff05;
+    padding:15px 162.77px 15px 24.92px;
+}
+.footer-bottom .__row{
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;
+}
+.footer-bottom .info{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff70;
+    font-family: var(--primaryfont-family2);
+}
+.footer-bottom .accounts .__row{
+    gap: 26.67px;
+}
+@media screen and (min-width:0) and (max-width:770px){
+    .__btn{
+        padding: 10.6px 32px;
+        font-size: 14px;
+        
+    }
+    .list-footer ul{
+        flex-wrap: wrap;
+
+    }
+    .footer-body .__row{
+        padding-left: 20px;
+    }
+    .footer-body form{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+     .footer-body input{
+        padding:10px 80px 10px 10px;
+
+    } 
+    .footer-body .Subscribe h2{
+        font-size: 25px;
+    }
+}
+/* end footer section */
+.items{
+    height: 900px;
+}
