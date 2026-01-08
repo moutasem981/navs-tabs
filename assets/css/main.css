@@ -137,6 +137,9 @@ h2{
     font-size: 30px;
 
     }
+    .__row .irure-dolor{
+        width: 80%;
+    }
 }
 /* end hero section */
 .nav_ {
@@ -157,6 +160,7 @@ h2{
     align-items: center;
     justify-content: space-between;
     padding-bottom: 54.65px;
+    row-gap: 10px;
 }
 .list-footer ul{
     display: flex;
@@ -203,7 +207,7 @@ h2{
         
     }
     .list-footer ul{
-        flex-wrap: wrap;
+        gap:15px;
 
     }
     .footer-body .__row{
